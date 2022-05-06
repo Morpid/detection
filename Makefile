@@ -9,7 +9,7 @@ CC = g++
 COMPILER_FLAGS = -w -std=c++17
 
 #LINKER_FLAGS specifies the libraries we're linking against
-LINKER_FLAGS = -lglfw3 -framework Cocoa -framework OpenGL -framework IOKit -framework CoreVideo -lassimp
+LINKER_FLAGS = -lglfw3 -lassimp
 
 #OBJ_NAME specifies the name of our exectuable
 OBJ_NAME = a.out
@@ -17,3 +17,5 @@ OBJ_NAME = a.out
 #This is the target that compiles our executable
 all : $(OBJS)
 	$(CC) $(OBJS) $(COMPILER_FLAGS) $(LINKER_FLAGS) -o $(OBJ_NAME)
+
+# TEST COMMENT
